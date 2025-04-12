@@ -1,0 +1,10 @@
+.result{
+    background-color: rgba(2, 129, 2, 0.212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #252525;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+}

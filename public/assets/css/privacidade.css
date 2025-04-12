@@ -1,0 +1,24 @@
+.termos h1, h3 {
+    color: #333;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.termos ul {
+    list-style:decimal;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.termos p {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
+}
+
+.termos a {
+    text-decoration: underline;
+    color: #007bff;
+}

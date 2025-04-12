@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600&amp;family=Poppins:wght@100;200;300;400;500;600;700;800&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #1a202c;
+    text-align: left;
+    background-color: white;    
+    user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    overflow-x: hidden;
+}
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+.form, .notificacoes {
+    flex: 1;
+    border-radius: 5px;
+    margin: 5px;
+}
+.form{
+    padding: 10px;
+    width: 100%;
+}
+.notificacoes{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.notificacoes .fa-envelope{
+    font-size: 45px;
+    color: #616161;
+}
+.formulario label{
+    display: block;
+    margin-bottom: 10px;
+    font-family: "poppins";
+    font-weight: 400;
+}
+.formulario input {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    font-family: "poppins";
+}
+.input-contact input {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    font-family: "poppins";
+}
+.email{
+    text-align: left;
+}
+.formulario input:hover{
+    border-color: #ff6600;
+}
+.formulario button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 100%;
+}
+.formulario button:hover{
+    background-color: #ff6600e5;
+}
+.notificacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; 
+}
+@media screen and (max-width: 808px) {
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario input {
+        width: 97%;
+        display: flex;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 2px;
+        outline: none;
+        font-family: "poppins";
+        text-align: left;
+    }
+    .formulario button {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+        width: 97%;
+    }
+}
+.loading{
+    width: 20px;
+    height: 20px;
+    border: 5px solid orange;
+    border-left-color: transparent;
+    animation: rotate 0.5s infinite;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 15px;
+    display: none;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.load{
+    color: orange;
+    text-align: center;
+}
+.contact{
+    width: 100%;
+}

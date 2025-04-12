@@ -1,0 +1,139 @@
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: "poppins";
+    color: #424242;
+    align-items: center;
+    padding-right: 8px;
+    padding-left: 9px;
+}
+header nav h2{
+    display: flex;
+}
+header nav h2 img{
+    height: 40px;
+    cursor: pointer;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header nav ul li{
+    font-size: 18px;
+    margin-left: 15px;
+    font-family: "poppins";
+    font-weight: 400;
+    padding: 8px;
+    border-radius: 2px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+header nav ul li a:hover{
+    color: orange;
+}
+header nav ul li:hover{
+    color: orange;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+header nav ul li i:hover{
+    border-radius: 50px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+header nav .fa-bars{
+    display: block;
+    padding: 8px;
+    font-size: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+header nav .user{
+    display: none;
+    align-items: center;
+}
+header nav .user .fa-user{
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+@media (max-width: 880px) {
+    header nav h2 img{
+        height: 35px;
+    }
+    header nav ul{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        text-align: left;
+        display: none;
+        list-style: none;
+    }
+    header nav ul li{
+        font-size: 18px;
+        margin-left: 0;
+        font-weight: 400;
+        padding: 8px;
+        border-radius: 2px;
+        text-align: left;
+        margin: 0;
+    }
+    header nav ul li:hover{
+        color: orange;
+        background-color: transparent;
+    }
+    header nav ul li i:hover{
+        border-radius: 50px;
+        background-color: #e0e0e0;
+    }
+    header nav ul li .menu-icon{
+        display: none;
+    }
+
+    header nav .user{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+#linkLogin, .linkRegistrar, .openModal{
+    display: none;
+}
+#like-button{
+    color: #424242;
+}
+#like-button:focus{
+    color: orange;
+    transform: scale(1.3);
+}
