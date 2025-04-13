@@ -2,15 +2,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
 import { getDatabase, ref, get, set } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDVpNC-fxCFjblA1M1euLVxvEcZMCOBm9Q",
-  authDomain: "mini-store-web.firebaseapp.com",
-  projectId: "mini-store-web",
-  storageBucket: "mini-store-web.appspot.com",
-  messagingSenderId: "378252508270",
-  appId: "1:378252508270:web:47114ff8de7aabf6767a7f",
-  measurementId: "G-LY6RKTJJDJ"
-};
+    const firebaseConfig = {
+        apiKey: "",
+        authDomain: "nome-do-projecto.firebaseapp.com",
+        projectId: "",
+        storageBucket: "nome-do-projecto.appspot.com",
+        messagingSenderId: "codigo-do-projecto",
+        appId: "",
+        measurementId: ""
+    };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getDatabase(app);
